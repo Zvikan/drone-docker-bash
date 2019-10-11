@@ -119,7 +119,10 @@ if [ -z ${PLUGIN_REPO} ]; then
   echo "missing repo"
   exit 1
 fi
-
+SLEEP_TIME=10
+echo "sleeping for $SLEEP_TIME sec"
+sleep $SLEEP_TIME
+echo "sleep done - let's continue..."
 
 # Info
 /usr/local/bin/docker version
